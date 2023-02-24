@@ -9,6 +9,6 @@
     
     Creates an executable in the `bin` folder of the `go` folder. Location can be changed using `GOPATH` and `GOBIN`, which are set using 
     
-    `go env -w GOPATH="<path>"` \n and 
+    `go env -w GOPATH="<path>"` and 
     
     `go env -w GOBIN="<path>"`
