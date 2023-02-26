@@ -12,3 +12,9 @@
     `go env -w GOPATH="<path>"` and 
     
     `go env -w GOBIN="<path>"`
+
+## Working with constants and variables
+
+A variable can be declared at the package level and remain unused. But within a function, unused variables will result in errors.
+
+Go passes arguments by values, not reference.
