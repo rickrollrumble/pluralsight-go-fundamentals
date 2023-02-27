@@ -1,6 +1,10 @@
 ## Ways to run a Go app
 1. `go run <filename>`
 
+    If the `main` function references other functions in the same package but in a different file, the command explicitly is `go run *.go` or `go run <file of main>.go <file of other function>.go`. 
+
+    For example, `conditionals.go` refers to function in `switch.go`; so `go run *.go` or `go run conditionals.go switch.go` will work.
+
 2. `go  build`
 
     Used to build an executable. Going into the package folder and running `go build` will create an executable with the same name as the package.
@@ -44,3 +48,5 @@ func functionName(paramName ...inputType)
 ```
 
 The `...` ellipses indicate that the function should expect any number of inputs of the declared data type.
+
+## Conditionals
