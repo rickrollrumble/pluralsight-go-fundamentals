@@ -23,3 +23,24 @@ However, when the address to a variable is passed with the `&variableName` notat
 
 ### Environment Variables
 These are settings on your working system. Can be obtained using `os` package.
+
+## Functions
+
+`func functionName(input <inputType>) returnType {}` is called the message signature. A function requires an input in the form of `<inputName inputType>`. 
+
+Multiple inputs, also called parameters, are comma-separated. `returnType` is the type of the output returned by the function. 
+
+More than one return value is possible, and the types will be enclosed in parantheses and comma-separated as 
+`(type1, type2)`
+
+`return` keyword is used to end the function.
+
+### Variadic function
+can be called with a varying number of trailing arguments, used when not sure how many inputs will be received.
+
+Declared using 
+```
+func functionName(paramName ...inputType)
+```
+
+The `...` ellipses indicate that the function should expect any number of inputs of the declared data type.
