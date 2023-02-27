@@ -17,4 +17,9 @@
 
 A variable can be declared at the package level and remain unused. But within a function, unused variables will result in errors.
 
-Go passes arguments by values, not reference.
+Go passes arguments by values, not reference. It can be overriden by using pointers. When a value without the `&` is passed to a function, a copy of the input value is made, operated upon, and returned. The original value remains unchanged.
+
+However, when the address to a variable is passed with the `&variableName` notation, the value at the location is changed directly.
+
+### Environment Variables
+These are settings on your working system. Can be obtained using `os` package.
