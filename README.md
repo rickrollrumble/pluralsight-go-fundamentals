@@ -49,4 +49,17 @@ func functionName(paramName ...inputType)
 
 The `...` ellipses indicate that the function should expect any number of inputs of the declared data type.
 
-## Conditionals
+## Arrays and Slices
+
+Arrays are numbered lists of the **same type**.
+
+Slices are used a lot more in Go. 
+
+Arrays have a fixed length. 
+
+Slices are resizable. They're built on top of arrays. No actual data gets stored, they're just pointers to the underlying array. 
+
+They're cheap because they're pointers. However, as a result, changing value of underlying array changes values of all slices referencing it. 
+
+Slices are references, so they're passed as references to functions. Slice itself is passed as a value, but the values are references.
+
